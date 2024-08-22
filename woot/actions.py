@@ -357,6 +357,7 @@ class ConversationsActions:
         default_factory=lambda: action_factory(
             method="POST",
             url="api/v1/accounts/{account_id}/conversations/{conversation_id}/toggle_status",
+            schema_=ws.ConversationToggleStatusPayload,
         )
     )
 

@@ -359,6 +359,11 @@ class ConversationMessageAttachmentCreate:
 
 
 @dataclass
+class ConversationToggleStatusPayload:
+    status: Status | None = None
+
+
+@dataclass
 class TeamCreateUpdatePayload:
     name: Optional[str] = None
     description: Optional[str] = None
